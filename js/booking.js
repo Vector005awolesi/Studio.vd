@@ -1,4 +1,4 @@
-/* Studio.VD — booking flow (request-based, persisted locally) */
+/* Lemmy Vedutti Photography — enquiry flow (request-based, persisted locally) */
 (function () {
   'use strict';
 
@@ -15,7 +15,7 @@
   var dateInput = document.getElementById('b-date');
   var current = 1;
   var TOTAL = 4;
-  var STORE_KEY = 'vd-booking-requests';
+  var STORE_KEY = 'lemmy-booking-requests';
 
   /* ---------- Init ---------- */
   // Min date = today
@@ -27,12 +27,12 @@
 
   // Preselect service from a services-row / nav click (session handoff)
   try {
-    var prefill = sessionStorage.getItem('vd-prefill-service');
+    var prefill = sessionStorage.getItem('lemmy-prefill-service');
     if (prefill) {
       var radio = form.querySelector('input[name="service"][value="' + prefill.replace(/"/g, '\\"') + '"]');
       if (radio) {
         radio.checked = true;
-        sessionStorage.removeItem('vd-prefill-service');
+        sessionStorage.removeItem('lemmy-prefill-service');
       }
     }
   } catch (e) { /* ignore */ }
@@ -150,7 +150,7 @@
   }
 
   function makeRef() {
-    return 'VD-' + Date.now().toString(36).toUpperCase().slice(-5);
+    return 'LV-' + Date.now().toString(36).toUpperCase().slice(-5);
   }
 
   /* ---------- Persistence ---------- */
@@ -164,7 +164,7 @@
 
   function whatsappLink(ref) {
     var text =
-      'Hello Studio.VD! I would like to book a shoot.\n\n' +
+      'Hello Lemmy Vedutti Photography! I would like to book a session.\n\n' +
       'Reference: ' + ref + '\n' +
       'Service: ' + val('service') + '\n' +
       'Date: ' + prettyDate(val('date')) + '\n' +
@@ -175,7 +175,7 @@
     if (email) text += '\nEmail: ' + email;
     var notes = val('notes');
     if (notes) text += '\nDetails: ' + notes;
-    return 'https://wa.me/2347079765065?text=' + encodeURIComponent(text);
+    return 'https://wa.me/2348037656409?text=' + encodeURIComponent(text);
   }
 
   /* ---------- Events ---------- */
@@ -193,7 +193,7 @@
     var record = {
       ref: ref,
       created: new Date().toISOString(),
-      status: 'request', // request-based — the studio confirms, nothing auto-booked
+      status: 'request', // request-based — Lemmy Vedutti Photography confirms, nothing auto-booked
       service: val('service'),
       date: val('date'),
       time: val('time'),

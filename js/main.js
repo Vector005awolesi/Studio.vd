@@ -1,4 +1,4 @@
-/* Studio.VD — main interactions */
+/* Lemmy Vedutti Photography — main interactions */
 (function () {
   'use strict';
 
@@ -93,7 +93,7 @@
     link.addEventListener('click', function () {
       var s = link.getAttribute('data-service');
       if (s) {
-        try { sessionStorage.setItem('vd-prefill-service', s); } catch (err) { /* ignore */ }
+        try { sessionStorage.setItem('lemmy-prefill-service', s); } catch (err) { /* ignore */ }
       }
     });
   });

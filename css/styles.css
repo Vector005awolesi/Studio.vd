@@ -1,5 +1,5 @@
 /* ============================================================
-   Studio.VD — Dark gallery aesthetic · Fraunces + Space Grotesk
+   Lemmy Vedutti Photography — Dark gallery aesthetic · Fraunces + Space Grotesk
    ============================================================ */
 
 :root {
@@ -240,19 +240,13 @@ body.nav-open { overflow: hidden; }
   text-transform: uppercase; color: var(--muted);
 }
 .w-idx { font-family: var(--font-display); font-style: italic; color: var(--brass); font-size: 0.85rem; }
-.w-a { grid-column: 1 / span 5; }
-.w-b { grid-column: 7 / span 4; margin-top: 14%; }
-.w-c { grid-column: 2 / span 4; margin-top: 6%; }
-.w-d { grid-column: 7 / span 5; }
-.w-e { grid-column: 1 / span 4; margin-top: 10%; }
-.w-f { grid-column: 6 / span 3; margin-top: 22%; }
-.w-g { grid-column: 10 / span 3; margin-top: 4%; }
-.w-h { grid-column: 1 / span 3; }
-.w-i { grid-column: 5 / span 4; margin-top: 14%; }
-.w-j { grid-column: 10 / span 3; margin-top: 26%; }
-.w-k { grid-column: 1 / span 4; margin-top: 12%; }
-.w-l { grid-column: 6 / span 5; margin-top: 30%; }
+.w-a { grid-column: 1 / span 7; }
+.w-b { grid-column: 8 / span 5; margin-top: 14%; }
+.w-c { grid-column: 1 / span 4; margin-top: 6%; }
+.w-d { grid-column: 5 / span 4; margin-top: 16%; }
+.w-e { grid-column: 9 / span 4; margin-top: 6%; }
 .work-item img { aspect-ratio: 4 / 5; }
+.work-item img.is-landscape { aspect-ratio: 3 / 2; }
 .work-more {
   margin-top: clamp(3rem, 6vw, 5rem); padding-top: 2.2rem;
   border-top: 1px solid var(--line-soft);
@@ -340,6 +334,7 @@ body.nav-open { overflow: hidden; }
 .rating-card .stars { color: var(--brass); letter-spacing: 0.2em; }
 .rating-card p { font-size: 0.78rem; color: var(--muted-strong); margin-top: 0.2rem; }
 .review-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2rem; }
+.review-grid-3 { grid-template-columns: repeat(3, 1fr); }
 .review-card {
   border: 1px solid var(--line-soft); background: rgba(255, 255, 255, 0.02);
   padding: 1.8rem 1.6rem; display: flex; flex-direction: column; gap: 1.2rem;
@@ -538,18 +533,12 @@ body.lb-open { overflow: hidden; }
   .review-card:nth-child(2) { transform: none; }
   .review-card:nth-child(2):hover { transform: translateY(-4px); }
   .work-grid { gap: clamp(1rem, 2vw, 1.8rem); }
-  .w-a { grid-column: 1 / span 6; }
-  .w-b { grid-column: 7 / span 6; margin-top: 10%; }
+  .w-a { grid-column: 1 / span 7; }
+  .w-b { grid-column: 8 / span 5; margin-top: 10%; }
   .w-c { grid-column: 1 / span 5; margin-top: 4%; }
-  .w-d { grid-column: 6 / span 6; margin-top: 14%; }
-  .w-e { grid-column: 1 / span 5; }
-  .w-f { grid-column: 7 / span 5; margin-top: 18%; }
-  .w-g { grid-column: 1 / span 4; margin-top: 8%; }
-  .w-h { grid-column: 5 / span 4; margin-top: 18%; }
-  .w-i { grid-column: 1 / span 5; margin-top: 6%; }
-  .w-j { grid-column: 7 / span 5; margin-top: 16%; }
-  .w-k { grid-column: 1 / span 5; margin-top: 10%; }
-  .w-l { grid-column: 6 / span 6; margin-top: 20%; }
+  .w-d { grid-column: 6 / span 7; margin-top: 14%; }
+  .w-e { grid-column: 1 / span 12; margin-top: 6%; }
+  .w-e img.is-landscape { aspect-ratio: 16 / 9; }
 }
 
 @media (max-width: 860px) {
